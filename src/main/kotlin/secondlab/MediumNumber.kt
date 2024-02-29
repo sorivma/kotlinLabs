@@ -8,5 +8,13 @@ fun medium(first: Int, second: Int, third: Int): Number {
 }
 
 fun main() {
-    println(medium(readln().toInt(), readln().toInt(), readln().toInt()))
+    val first = readln().toInt()
+    val second = readln().toInt()
+    val third = readln().toInt()
+
+    if (first == second && second == third) {
+        println("Ошибка")
+    } else {
+        println(medium(first, second, third))
+    }
 }
